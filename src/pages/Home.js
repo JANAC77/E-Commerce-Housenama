@@ -3,7 +3,6 @@ import HeroSection from '../components/HeroSection';
 import FeatureCard from '../components/FeatureCard';
 import ProductCard from '../components/ProductCard';
 import ReviewCard from '../components/ReviewCard';
-import { motion } from 'framer-motion';
 import { FaTruck, FaPalette, FaHeart, FaRuler, FaShieldAlt, FaClock } from 'react-icons/fa';
 import './Home.css';
 

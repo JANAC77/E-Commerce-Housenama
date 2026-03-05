@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
-import { motion } from 'framer-motion';
 import { FaShoppingCart } from 'react-icons/fa';
 import './ProductDetail.css';
 
