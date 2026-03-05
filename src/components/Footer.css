@@ -1,0 +1,131 @@
+footer {
+  background: #f8f9fa;
+  padding-top: 60px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer .col {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+footer h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+}
+
+footer p {
+  font-size: 13px;
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+footer a {
+  font-size: 13px;
+  color: var(--text-light);
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: var(--transition);
+}
+
+footer a:hover {
+  color: var(--primary-color);
+  transform: translateX(5px);
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.social-icons a {
+  width: 36px;
+  height: 36px;
+  background: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-dark);
+  box-shadow: var(--shadow);
+  margin-bottom: 0;
+}
+
+.social-icons a:hover {
+  background: var(--primary-color);
+  color: var(--white);
+  transform: translateY(-3px);
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.subscribe-form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+}
+
+.subscribe-form input:focus {
+  border-color: var(--primary-color);
+}
+
+.subscribe-form button {
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+
+footer .install img {
+  width: 200px;
+  margin-top: 10px;
+}
+
+.copyright {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  border-top: 1px solid #ddd;
+}
+
+.copyright p {
+  font-size: 12px;
+  color: var(--text-light);
+  margin: 0;
+}
+
+@media (max-width: 799px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 477px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .subscribe-form {
+    flex-direction: column;
+  }
+}
