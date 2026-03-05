@@ -1,14 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaPinterestP } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube, FaPinterestP } from 'react-icons/fa';
 import './Footer.css';
 
 const Footer = () => {
+  const openSocial = (url) => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <footer className="section-p1">
       <div className="footer-container">
         <div className="col">
-          <img src="/images/logo.avif" className="logo" alt="Housenama" />
+          <img src="/images/logo.png" className="logo" alt="Housenama" />
           <h4>Contact</h4>
           <p><strong>Workshop:</strong> 8 & 15, Mulchand Mansion, 20/30 Princess Street, Mumbai - 400002</p>
           <p><strong>Regd Office:</strong> 501, Amrita Apartments, VS Marg, Dadar W, Mumbai - 400028</p>
@@ -24,8 +28,6 @@ const Footer = () => {
           <Link to="/faq">FAQ's</Link>
           <Link to="/reviews">Reviews</Link>
           <Link to="/track-order">Track Your Order</Link>
-          <Link to="/installation-guide">Installation Guide</Link>
-          <Link to="/franchise">Become a Franchise Partner</Link>
         </div>
 
         <div className="col">
@@ -47,11 +49,21 @@ const Footer = () => {
         <div className="col install">
           <h4>Follow Us</h4>
           <div className="social-icons">
-            <a href="#"><FaFacebookF /></a>
-            <a href="#"><FaInstagram /></a>
-            <a href="#"><FaTwitter /></a>
-            <a href="#"><FaYoutube /></a>
-            <a href="#"><FaPinterestP /></a>
+            <button onClick={() => openSocial('https://facebook.com/housenama')} aria-label="Facebook">
+              <FaFacebookF />
+            </button>
+            <button onClick={() => openSocial('https://instagram.com/housenama')} aria-label="Instagram">
+              <FaInstagram />
+            </button>
+            <button onClick={() => openSocial('https://twitter.com/housenama')} aria-label="Twitter">
+              <FaTwitter />
+            </button>
+            <button onClick={() => openSocial('https://youtube.com/housenama')} aria-label="YouTube">
+              <FaYoutube />
+            </button>
+            <button onClick={() => openSocial('https://pinterest.com/housenama')} aria-label="Pinterest">
+              <FaPinterestP />
+            </button>
           </div>
 
           <h4>Subscribe to our emails</h4>
@@ -59,6 +71,7 @@ const Footer = () => {
             <input type="email" placeholder="Your email address" />
             <button className="btn-primary">Subscribe</button>
           </div>
+
         </div>
       </div>
 

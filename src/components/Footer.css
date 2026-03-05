@@ -9,6 +9,7 @@ footer {
   gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 footer .col {
@@ -17,34 +18,34 @@ footer .col {
 }
 
 footer .logo {
-  width: 100px;
+  width: 150px;
   margin-bottom: 20px;
 }
 
 footer h4 {
   font-size: 16px;
   font-weight: 600;
-  color: var(--text-dark);
+  color: #222;
   margin-bottom: 20px;
 }
 
 footer p {
   font-size: 13px;
-  color: var(--text-light);
+  color: #465b52;
   line-height: 1.6;
   margin-bottom: 8px;
 }
 
 footer a {
   font-size: 13px;
-  color: var(--text-light);
+  color: #465b52;
   text-decoration: none;
   margin-bottom: 10px;
-  transition: var(--transition);
+  transition: all 0.3s ease;
 }
 
 footer a:hover {
-  color: var(--primary-color);
+  color: #088178;
   transform: translateX(5px);
 }
 
@@ -54,22 +55,25 @@ footer a:hover {
   margin-bottom: 30px;
 }
 
-.social-icons a {
+.social-icons button {
   width: 36px;
   height: 36px;
-  background: var(--white);
+  background: #ffffff;
   border-radius: 50%;
+  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--text-dark);
-  box-shadow: var(--shadow);
-  margin-bottom: 0;
+  color: #222;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
 }
 
-.social-icons a:hover {
-  background: var(--primary-color);
-  color: var(--white);
+.social-icons button:hover {
+  background: #088178;
+  color: #ffffff;
   transform: translateY(-3px);
 }
 
@@ -88,7 +92,7 @@ footer a:hover {
 }
 
 .subscribe-form input:focus {
-  border-color: var(--primary-color);
+  border-color: #088178;
 }
 
 .subscribe-form button {
@@ -110,7 +114,7 @@ footer .install img {
 
 .copyright p {
   font-size: 12px;
-  color: var(--text-light);
+  color: #465b52;
   margin: 0;
 }
 
