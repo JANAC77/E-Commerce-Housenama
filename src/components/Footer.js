@@ -12,7 +12,7 @@ const Footer = () => {
     <footer className="section-p1">
       <div className="footer-container">
         <div className="col">
-          <img src="/images/logo.png" className="logo" alt="Housenama" />
+          <img src="/images/logo.avif" className="logo" alt="Housenama" />
           <h4>Contact</h4>
           <p><strong>Workshop:</strong> 8 & 15, Mulchand Mansion, 20/30 Princess Street, Mumbai - 400002</p>
           <p><strong>Regd Office:</strong> 501, Amrita Apartments, VS Marg, Dadar W, Mumbai - 400028</p>
